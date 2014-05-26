@@ -4,7 +4,7 @@ platforms :jruby do
   gem 'jruby-openssl', '~> 0.7'
 end
 
-platforms :mri_18 do
+if RUBY_VERSION < '1.9.3'
   gem 'activesupport', '~> 3.2.18'
 end
 
